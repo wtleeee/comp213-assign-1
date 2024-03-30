@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CE Course Evaluation Form</title>
+    <link rel="stylesheet" href="assignment4.css">
+</head>
+<body>
+    <header>
+        <a href="https://www.centennialcollege.ca/">
+            <img src="banner.jpg" alt="Centennial College" id="college-logo">
+        </a>
+    </header>
+    <div class="mainform">
+        <h1>CENTENNIAL COLLEGE</h1>
+        <h2>Continuing Education Course/Instructor Evaluation</h2>
+        <p>Please read each statement carefully and consider each one individually. Give only <span class="highlight">answer</span> for each question.</p>
+        <form action="#" method="post">
+            <label for="course-name">*Course Name/Code:</label>
+            <input type="text" id="course-name" name="course-name" required>
+            <label for="semester">*Semester:</label>
+            <select name="semester" id="semester">
+                <option value="Fall">Fall</option>
+                <option value="Winter">Winter</option>
+                <option value="Spring/Summer">Spring/Summer</option>
+            </select>
+            <label for="year">*Year:</label>
+            <input type="text" id="year" name="year" pattern="\d{4}" title="Please enter a valid year in YYYY format." required>
+            <label for="instructor">*Instructor:</label>
+            <input type="text" id="instructor" name="instructor" required>
+            <div class="rating-section">
+                <p>INSTRUCTOR</p>
+                <div class="rating-question">
+                    <p>How would you rate the instructor's:</p>
+                    <label for="knowledge">1. <span class="highlight">knowledge</span> of subject?</label>
+                    <select name="knowledge" id="knowledge">
+                        <option value="Excellent">Excellent</option>
+                        <option value="Good">Good</option>
+                        <option value="Fair">Fair</option>
+                        <option value="Not Satisfactory">Not Satisfactory</option>
+                    </select>
+                    <label for="helpfulness">2. <span class="highlight">helpfulness</span>?</label>
+                    <select name="helpfulness" id="helpfulness">
+                        <option value="Excellent">Excellent</option>
+                        <option value="Good">Good</option>
+                        <option value="Fair">Fair</option>
+                        <option value="Not Satisfactory">Not Satisfactory</option>
+                    </select>
+                    <label for="respect">3. <span class="highlight">courtesy and respect</span> for all students?</label>
+                    <select name="respect" id="respect">
+                        <option value="Excellent">Excellent</option>
+                        <option value="Good">Good</option>
+                        <option value="Fair">Fair</option>
+                        <option value="Not Satisfactory">Not Satisfactory</option>
+                    </select>
+                    <label for="communication">4. <span class="highlight">communication</span> skills?</label>
+                    <select name="communication" id="communication">
+                        <option value="Excellent">Excellent</option>
+                        <option value="Good">Good</option>
+                        <option value="Fair">Fair</option>
+                        <option value="Not Satisfactory">Not Satisfactory</option>
+                    </select>
+                    <label for="overall">5. overall <span class="highlight">performance</span>?</label>
+                    <select name="overall" id="overall">
+                        <option value="Excellent">Excellent</option>
+                        <option value="Good">Good</option>
+                        <option value="Fair">Fair</option>
+                        <option value="Not Satisfactory">Not Satisfactory</option>
+                    </select>
+                </div>
+            </div>
+            <div class="rating-section">
+                <p>COURSE</p>
+                <div class="rating-question">
+                    <label for="course-materials">6. How would you rate the <span class="highlight">course materials</span>?</label>
+                    <select name="course-materials" id="course-materials">
+                        <option value="Excellent">Excellent</option>
+                        <option value="Good">Good</option>
+                        <option value="Fair">Fair</option>
+                        <option value="Not Satisfactory">Not Satisfactory</option>
+                    </select>
+                    <label for="expectations">7. How much did this course meet your <span class="highlight">expectations</span>?</label>
+                    <select name="expectations" id="expectations">
+                        <option value="Excellent">Excellent</option>
+                        <option value="Good">Good</option>
+                        <option value="Fair">Fair</option>
+                        <option value="Not Satisfactory">Not Satisfactory</option>
+                    </select>
+                    <label for="rate">8. How would you rate this course (<span class="highlight">overall</span>)?</label>
+                    <select name="rate" id="rate">
+                        <option value="Excellent">Excellent</option>
+                        <option value="Good">Good</option>
+                        <option value="Fair">Fair</option>
+                        <option value="Not Satisfactory">Not Satisfactory</option>
+                    </select>
+                </div>
+            </div>
+            <div class="rating-section">
+                <p>GENERAL INFORMATION</p>
+                <div class="rating-question">
+                    <label for="course-outline">9. Was the <span class="highlight">course outline</span> reviewed/explained at the beginning of your course?</label>
+                    <select name="course-outline" id="course-outline">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        <option value="Not Sure">Not Sure</option>
+                    </select>
+                    <label for="recommend">10. Would you <span class="highlight">recommend</span> this course to a friend with the same interests?</label>
+                    <select name="recommend" id="recommend">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        <option value="Not Sure">Not Sure</option>
+                    </select>
+                </div>
+            </div>
+            <div class="rating-section">
+                <p>ANY OTHER COMMENTS</p>
+                    <div class="rating-question">
+                    <label for="best-thing">11. What is the <span class="highlight">best thing</span> about this course?</label>
+                    <input type="text" id="best-thing" name="best-thing">
+                    <label for="improvement">12. How could we <span class="highlight">improve</span> this course to a friend with the same interest?</label>
+                    <input type="text" id="improvement" name="improvement">
+                    <label for="comments">13. Other:</label>
+                    <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+        <footer>
+            <p>Thank you! We pay attention to your feedback!</p>
+            <p>Web: <a href="https://www.centennialcollege.ca/continuingeducation">www.centennialcollege.ca/continuingeducation</a></p>
+            <p>Email: <a href="mailto:continuingeducation@centennialcollege.ca">continuingeducation@centennialcollege.ca</a></p>
+        </footer>
+    </div>
+</body>
+</html>
