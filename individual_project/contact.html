@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Banner Section -->
+    <header class="top-banner">
+        <div class="left-sector"><img src="images/logo.png" alt="Company Logo" class="company-logo"></div>
+        <div class="center-sector">
+            <h1>Megan Till-Landry</h1>
+            <h3>HEAPS ESTRIN Real Estate Team</h3>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="content-container">
+        <!-- Navigation Section -->
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="properties.html">Available Properties for sale</a></li>
+                <li>
+                    <ul>
+                        <li><a href="property1.html">Lawrence Park</a></li>
+                        <li><a href="property2.html">Moore Park</a></li>
+                        <li><a href="property3.html">Annex</a></li>
+                    </ul>
+                </li>
+                <li>Contact</li>
+                <li><a href="sitemap.html">Site Map and Credits</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>&emsp;&emsp;&emsp;Contact Us</h2>
+            <form action="mailto:megan1@heapsestrin.com" method="post">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required><br>
+
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required><br>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="property-type">Type of Property Interested:</label>
+                <select id="property-type" name="property-type">
+                    <option value="house">House</option>
+                    <option value="condominium">Condominium</option>
+                </select><br>
+
+                <label for="bedrooms">Number of Bedrooms:</label>
+                <input type="number" id="bedrooms" name="bedrooms" min="0" required><br>
+
+                <label for="bathrooms">Number of Bathrooms:</label>
+                <input type="number" id="bathrooms" name="bathrooms" min="0" required><br>
+
+                <label for="price-range">Price Range:</label>
+                <input type="text" id="price-range" name="price-range" required><br>
+
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </main>
+
+        <!-- Agent Section -->
+        <aside class="agent-section">
+            <img src="images/agent-picture.jpg" alt="Agent's Picture" class="agent-pic">
+            <p>Megan Till-Landry</p>
+            <p>Real Estate Agent, BA</p>
+            <h3>Contact Information</h3>
+            <p>C. 416.886.1234</p>
+            <a href="mailto:megan@heapsestrin.com">megan1@heapsestrin.com</a>
+        </aside>
+    </div>
+
+    <footer>
+        <p>© Copyright Wing Tung Lee - 301382961 - COMP213 - Winter 20244</p>
+    </footer>
+</body>
+</html>

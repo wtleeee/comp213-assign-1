@@ -1,0 +1,315 @@
+/* Global styles */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+}
+.top-banner {
+    display: flex;
+    justify-content: space-between; 
+    padding: 10px;
+    font-weight: bold;
+    background-color: #cbaa9bc5;
+    color: #0E1F27;
+}
+  
+.left-sector {
+text-align: left;
+}
+
+.center-sector {
+text-align: left;
+flex-grow: 1; 
+width: 50%;
+}
+
+.top-banner img {
+max-width: 60%;
+height: auto;
+}
+
+
+.content-container {
+    display: flex;
+}
+
+main {
+    width: 80%;
+    padding: 20px;
+}
+
+footer {
+    background-color: #cbaa9bc5; 
+    color: #0E1F27;
+    text-align: center;
+    font-size: smaller;
+}
+
+footer p {
+    font-size: 14px; 
+}
+
+/* List styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.intro-banner {
+    width: 600px;
+    height: auto;
+}
+
+.company-logo {
+    width: 200px;
+    height: auto;
+}
+
+/* nav section */
+nav {
+    width: 20%;
+    background-color: #0E1F27; 
+    color: #B1B0AF;;
+    font-size: large;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-links > li {
+    padding: 10px 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #F7EED7;
+}
+
+.nav-links li a:hover {
+    color:#B1B0AF;
+}
+
+.nav-links ul {
+    list-style-type: disc; 
+    margin: 0;
+    padding-left: 20px; 
+}
+
+.nav-links ul li {
+    margin-bottom: 30px;
+}
+
+.nav-links ul li a {
+    font-size: smaller;
+}
+
+/* agent section */
+.agent-section {
+    width: 20%;
+    background-color: #fff; 
+    padding: 20px;
+}
+
+.agent-section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.agent-pic {
+    width: 200px;
+    height: auto;
+}
+
+/* Property box styling */
+.property-box {
+    background-color: #f4f1f0;
+    padding: 20px;
+    border-radius: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.property-box a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.property-box img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 0px;
+}
+
+.property-box .property-details {
+    margin-top: 10px;
+}
+
+.property-box .property-details h2 {
+    margin-bottom: 5px;
+}
+
+.property-box .property-details p {
+    margin: 5px 0;
+}
+
+.property-label {
+    font-weight: bold;
+}
+
+/* Property thumbnail */
+.property {
+    margin-bottom: 20px;
+}
+
+.property img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+.property .description {
+    color: #555;
+}
+
+.property .price {
+    color: #CBAA9B;
+}
+
+/* Form styling */
+form {
+    width: 70%;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #CBAA9B;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #CBAA9B;
+}
+
+input[type="number"] {
+    width: calc(100% - 22px); 
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #CBAA9B; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+.property-label {
+    font-weight: bold;
+    color: #ae826d; 
+}
+
+/* Sitemap list styling */
+.box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.sitemap-list li::before {
+    content: "\2022"; 
+    color: #CBAA9B; 
+    font-size: 10px;
+    margin-right: 10px;
+}
+
+
+.sitemap-list li a {
+    text-decoration: none;
+    color: #ae826d;
+}
+
+.sitemap-list li a:hover {
+    color:#B1B0AF;
+    text-decoration: underline;
+}
+
+/* Credits list styling */
+.credits-list li {
+    display: flex;
+}
+
+.credits-list li span {
+    width: 150px; 
+    font-weight: bold;
+}
+
+.credits-list li span::after {
+    content: ":";
+    margin-right: 5px;
+}
+
+.credits-list li ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.credits-list li a {
+    text-decoration: none;
+    color: #ae826d;
+}
+
+.credits-list li a:hover {
+    color:#B1B0AF;
+    text-decoration: underline;
+}
+
+.agent-section a {
+    text-decoration: none;
+    color: #ae826d;
+}
+
+.agent-section a:hover {
+    color:#B1B0AF;
+    text-decoration: underline;
+}
